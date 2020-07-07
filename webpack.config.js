@@ -30,12 +30,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jpg|gif|ico)$/i,
         use: [
           {
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
-              limit: 8192,
+              esModule: false,
+              name: '[name].[ext]',
             },
           },
         ],
@@ -46,6 +47,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
+      favicon: './src/favicon.ico',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
