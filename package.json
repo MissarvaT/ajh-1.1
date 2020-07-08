@@ -1,7 +1,11 @@
 {
   "name": "ajh-1.1",
   "version": "1.0.0",
+  "description": "homework",
   "main": "index.js",
+  "repository": "https://github.com/MissarvaT/ajh-1.1.git",
+  "author": "missarvat",
+  "license": "MIT",
   "scripts": {
     "build": "webpack --mode production",
     "lint": "eslint .",
@@ -9,9 +13,6 @@
     "test": "jest",
     "coverage": "jest --coverage"
   },
-  "repository": "https://github.com/MissarvaT/ajh-1.1.git",
-  "author": "missarvat",
-  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
