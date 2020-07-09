@@ -10,7 +10,7 @@
     "build": "webpack --mode production",
     "lint": "eslint .",
     "start": "webpack-dev-server --mode development",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "coverage": "jest --coverage"
   },
   "devDependencies": {
